@@ -1,0 +1,6 @@
+console.log(typeof (2 + 4))
+console.log(typeof (20 - 7))
+console.log(typeof (20 * 2))
+console.log(typeof (9 / 3))
+console.log(typeof (20 % 2))
+console.log(typeof (21 % 4))

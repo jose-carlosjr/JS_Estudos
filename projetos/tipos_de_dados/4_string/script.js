@@ -1,0 +1,5 @@
+console.log(typeof 'Isso é um texto')
+console.log(typeof "Isso também")
+console.log(typeof `Esse aqui também`)
+console.log(typeof 'Infinity')
+console.log(typeof Infinity)

@@ -1,0 +1,17 @@
+Programa/Software
+
+- Conjunto de declarações (statements)
+- Statements são conjuntos de expressões (expressions)
+- Expression é todo fragmento de código q produz um valor
+
+O Software tem um objetivo, o mesmo é guiado pelos statements, tendo como base as expressions
+
+- UM STATEMENT É POR EXEMPLO UMA ESTRUTURA DE CONTROLE, COMO OF "IF"
+- EXPRESSIONS SÃO OS VALORES COM OS QUAIS AS ESTRUTURAS DE CONTROLE SÃO BASEADAS
+
+------------------------- EXEMPLO ---------------------
+
+Statement: Console.log(3 > 2)
+Expression: Console.log('José')
+
+--------------------------------------------------------

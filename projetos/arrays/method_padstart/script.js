@@ -1,0 +1,9 @@
+// padStart DEFINE O MÁXIMO DE CARACTERES DE UMA STRING E SE FALTAR INCLUI O CARACTERE QUE DETERMINANOS APARTIR DO ÍNICIO 
+
+let fds = '21211'
+console.log(fds.padStart(6, '0'))
+
+// padEnd É O MESMO ESQUEMA, PORÉM ADICIONA OS CARACTERES RESTANTES NO FINAL
+
+let sku = '937'
+console.log(sku.padEnd(6, '0'))
