@@ -1,0 +1,25 @@
+/*
+    O OPERADOR {} EM UMA EXPRESSÃO REGULAR (REGEX) É USADO COMO UM QUANTIFICADOR PARA ESPECIFICAR O NÚMERO EXATO DE VEZES QUE UM ELEMENTO DEVE OCORRER. EXISTEM ALGUMAS MANEIRAS DIFERENTES DE USAR O OPERADOR {}:
+    
+    QUANTIFICADOR EXATO: {n} ESPECIFICA QUE O ELEMENTO ANTERIOR DEVE OCORRER EXATAMENTE n VEZES.
+
+    OS DEMAIS PARECEM NÃO FUNCIONAR
+    INTERVALO: {n,m} ESPECIFICA QUE O ELEMENTO ANTERIOR DEVE OCORRER PELO MENOS n VEZES E NO MÁXIMO m VEZES.
+    QUANTIFICADOR MÍNIMO: {n,} ESPECIFICA QUE O ELEMENTO ANTERIOR DEVE OCORRER PELO MENOS n VEZES.
+*/
+
+// NÚMERO DE TELEFONE
+const reg1 = /\d{5}\-\d{4}/
+
+console.log(reg1.test('91234-5678'))
+console.log(reg1.test('912345-678'))
+
+//////////////////////////////////////////////////////////
+const reg2 = /\d{2,4}/
+
+console.log(reg2.test('1'))
+console.log(reg2.test('12'))
+console.log(reg2.test('123'))
+console.log(reg2.test('1234'))
+console.log(reg2.test('12345'))
+console.log(reg2.test('123456'))
