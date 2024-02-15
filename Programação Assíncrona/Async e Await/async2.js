@@ -67,5 +67,37 @@ async function realizarOperacoesAssincronas() {
         const dados1 = await resposta1.json()
         const dados2 = await resposta2.json()
         const dados3 = await resposta3.json()
+
+        // PROCESSA OS DADOS (NESTE EXEMPLO, APENAS EXIBE NO CONSOLE)
+        console.log('Dados 1:', dados1)
+        console.log('Dados 2:', dados2)
+        console.log('Dados 3:', dados3)
+
+        // RETORNA OS DADOS PARA USO POSTERIOR, SE NECESSÁRIO
+        return {dados1, dados2, dados3}
+    } catch (erro) {
+        console.error('Erro ao relizar operações assíncronas:', erro)
+        // SE OCORRER UM ERRO, VOCÊ PODE LIDAR COM ISSO AQUI, POR EXEMPLO, LANÇANDO NOVAMENTE PARA QUE A FUNÇÃO CHAMADORA POSSA LIDAR COM ELE
+        throw erro
     }
 }
+
+// CHAMANDO A FUNÇÃO ASSÍNCRONA E LIDANDO COM OS DADOS RETORNADOS
+realizarOperacoesAssincronas().then(({dados1, dados2, dados3}) => {
+    // AQUI VOCÊ PODE USAR OS DADOS RETORNADOS PELAS OPERAÇÕES ASSÍNCRONAS
+    console.log('Dados 1:', dados1)
+    console.log('Dados 2:', dados2)
+    console.log('Dados 3:', dados3)
+}).catch(erro => {
+    console.error('Erro ao realiza operações assíncronas:', erro)
+})
+
+/*
+    NESTE EXEMPLO: 
+
+    - REALIZAROPERACOESASSINCRONAS() É UMA FUNÇÃO ASSÍNCRONA QUE FAZ UMA SÉRIE DE REQUISIÇÕES ASSÍNCRONAS PARA DIFERENTES ENDPOINTS DA API.
+    - CADA REQUISIÇÃO É FEITA SEQUENCIALMENTE USANDO A PALAVRA-CHAVE AWAIT, O QUE SIGNIFICA QUE A PRÓXIMA REQUISIÇÃO SÓ É FEITA APÓS A CONCLUSÃO DA ANTERIOR. 
+    - OS DADOS DE CADA RESPOSTA SÃO CONVERTIDOS PARA JSON E PROCESSADOS. 
+    - OS DADOS PROCESSADOS SÃO EXIBIDOS NO CONSOLE E, EM SEGUIDA, RETORNADOS PARA USO POSTERIOR. 
+    - A FUNÇÃO É CHAMADA USANDO .THEN() PARA LIDAR COM OS DADOS RETORNADOS OU .CATCH() PARA LIDAR COM ERROS. 
+*/
