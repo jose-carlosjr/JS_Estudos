@@ -1,0 +1,33 @@
+______________ HTTP _________________
+
+Protocolo de Transferência de Hipertexto (em inglês, Hypertext Transfer Protocol). É um protocolo de comunicação utilizado para transferir informações na World Wide Web. Ele é a base para a comunicação de dados na web, permitindo que navegadores da web e servidores se comuniquem entre si para solicitar e enviar recursos, como páginas da web, imagens, vídeos, etc. O HTTP opera em um modelo de requisição e resposta, onde um cliente, como um navegador da web, envia uma solicitação HTTP a um servidor e o servidor responde com os recursos solicitados, juntamente com um código de status que indica o sucesso ou a falha da solicitação.
+
+
+____________ URL _________________
+
+Localizador Uniforme de Recursos (em inglês, Uniform Resource Locator). É uma sequência de caracteres que especifica onde um recurso específico pode ser encontrado na Internet e o mecanismo para acessá-lo. Uma URL geralmente consiste em várias partes:
+
+Esquema (ou protocolo): Indica o protocolo a ser usado para acessar o recurso, como "http://" para páginas da web normais ou "https://" para páginas da web seguras.
+
+Domínio: Indica o nome de domínio do servidor onde o recurso está localizado, como "www.exemplo.com".
+
+Caminho: Especifica o caminho para o recurso dentro do servidor. Por exemplo, em "www.exemplo.com/pagina", "/pagina" é o caminho.
+
+Parâmetros (opcionais): Podem ser fornecidos na URL para transmitir informações extras para o servidor.
+
+Âncora (opcional): Permite que você especifique um local específico em uma página da web para direcionar um usuário.
+
+Por exemplo, na URL "https://www.exemplo.com/pagina?parametro=valor#secao", "https://" é o esquema, "www.exemplo.com" é o domínio, "/pagina" é o caminho, "?parametro=valor" são os parâmetros e "#secao" é a âncora.
+
+_____________ DOM ________________
+
+Significa Modelo de Objeto de Documento (em inglês, Document Object Model). O DOM é uma interface de programação que representa a estrutura de uma página web como uma árvore de objetos. Cada elemento da página web, como texto, imagens, links, etc., é representado por um nó no DOM.
+
+O DOM permite que os programadores manipulem a estrutura, o estilo e o conteúdo de uma página web dinamicamente usando linguagens de script, como JavaScript.
+
+Em resumo, o DOM é uma representação programática da estrutura de uma página web que permite a interação dinâmica com os elementos da página por meio de linguagens de script.
+
+
+
+
+
