@@ -1,10 +1,5 @@
-const container = document.getElementById('container')
+const container = document.querySelector('#container')
 
-setTimeout(() => {
-    container.style.color = 'red'
-    container.style.fontFamily = 'Arial'
-    container.style.textAlign = 'center'
-    container.style.textDecoration = 'underline'
-    container.style.fontStyle = 'italic'
-    container.style.fontSize = '20px'
-}, 1000);
+container.addEventListener('click', () => {
+    console.log('Click!')
+})
